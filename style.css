@@ -3,10 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Saira', sans-serif;
+    user-select: none;
 }
 
 body {
-    background: #725671;
+    background: #121212;
     padding: 0;
     margin: 0;
 }
@@ -21,8 +22,9 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #9A7E99;
+    background: #2d2d2d;
     text-align: center;
+    color: #ffffff;
   }
   
 .top_wrapper li {
@@ -37,7 +39,7 @@ html {
   }
   
   li div:hover {
-    background-color: #e0e0e0de;
+    background-color: #1e1e1e;
     cursor: pointer;
     transition: 0.4s;
   }
@@ -49,15 +51,32 @@ html {
 
 /* Main starts here. */
 .main {
-    text-align: center;
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.content {
-    height: 700px;
-    width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
+.welcome_txt {
+  min-height: 1000px;
+  height: -webkit-fill-available;
+  width: auto;
+  background: #1e1e1e;
+  padding: 30px;
+  font-size: 40px;
+  color: #bb86fc;
+}
+
+.footer {
+  text-align: center;
+  position: sticky;
+  margin-top: 20px;
+  width: 1200px;
+  margin: 20px auto;
+}
+
+.footer p {
+  padding: 70px 0;
+  background:#1e1e1e;
+  color: #bb86fc;
+  user-select: all;
 }
